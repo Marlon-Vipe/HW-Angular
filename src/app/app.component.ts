@@ -10,9 +10,14 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'Vipe Web';
-  result: number = 0;
+  result_add: number = 0;
+  result_substract: number = 0;
   
   sumar() {
-    this.result = 2 + 3;
+    this.result_add = 5 + 3;
+  }
+
+  restar(){
+    this.result_substract = 10-5;
   }
 }
