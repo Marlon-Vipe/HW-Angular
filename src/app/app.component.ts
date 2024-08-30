@@ -12,6 +12,7 @@ export class AppComponent {
   title = 'Vipe Web';
   result_add: number = 0;
   result_substract: number = 0;
+  result_mult: number = 0;
   
   sumar() {
     this.result_add = 5 + 3;
@@ -19,5 +20,9 @@ export class AppComponent {
 
   restar(){
     this.result_substract = 10-5;
+  }
+
+  multiplicar(){
+    this.result_mult = 10*5;
   }
 }
