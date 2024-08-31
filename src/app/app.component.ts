@@ -1,14 +1,14 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
-@Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css',
+@Component({  // Este componente envuelve a todos.
+  selector: 'app-root', // Forma en que se referie a este componente en otro sitio.
+  standalone: true, // Si queremos usar un modulo dentro de este componente, se usa en los {imports}
+  imports: [RouterOutlet],  // Aqui es que se usa
+  templateUrl: './app.component.html', // Esto es lo que renderiza
+  styleUrl: './app.component.css',// Esto es lo que renderiza tambien
 })
-export class AppComponent {
+export class AppComponent { 
   title = 'Vipe Web';
   result_add: number = 0;
   result_substract: number = 0;
