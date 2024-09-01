@@ -10,24 +10,4 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent { 
   title = 'Vipe Web';
-  result_add: number = 0;
-  result_substract: number = 0;
-  result_mult: number = 0;
-  result_div: number = 0;
-  
-  sumar() {
-    this.result_add = 5 + 3;
-  }
-
-  restar(){
-    this.result_substract = 10-5;
-  }
-
-  multiplicar(){
-    this.result_mult = 10*5;
-  }
-
-  dividir(){
-    this.result_div = 10/5;
-  }
 }
