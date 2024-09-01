@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
 @Component({  // Este componente envuelve a todos.
-  selector: 'app-root', // Forma en que se referie a este componente en otro sitio.
+  selector: 'app-root', // Forma en que se refiere a este componente en otro sitio.
   standalone: true, // Si queremos usar un modulo dentro de este componente, se usa en los {imports}
   imports: [RouterOutlet],  // Aqui es que se usa
   templateUrl: './app.component.html', // Esto es lo que renderiza
