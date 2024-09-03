@@ -18,7 +18,7 @@ export class TeamsComponent {
     name: 'Aguilas Cibaeñas'
   },
   {
-    id: 3,
+    id: 3, 
     name: 'Leones del Escogido'
   },
   {
@@ -33,4 +33,4 @@ export class TeamsComponent {
     id: 6,
     name: 'Estrellas Orientales'
   },
-}
+  ]}

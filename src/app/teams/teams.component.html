@@ -1,1 +1,6 @@
-<p>teams works!</p>
+<ul>
+    @for (team of teams; track team.id)
+    {
+        <li>{{team.name}}</li>
+    }
+</ul>
