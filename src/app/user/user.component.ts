@@ -10,4 +10,8 @@ import { Component } from '@angular/core';
 export class UserComponent {
   username = "Marlon Villalona"
   isLoggedIn = true;
+
+  greet(){
+    alert('Hi!');
+  }
 }

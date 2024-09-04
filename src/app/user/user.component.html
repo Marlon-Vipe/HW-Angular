@@ -1,6 +1,10 @@
 <section>
 @if (isLoggedIn) {
     <p>Bienvenido {{username}}</p>
+    <img
+    (click)="greet()"
+    alt="photo" 
+    src="https://github.com/Marlon-Vipe.png">
 }@else {
     <p>Inicia sesión</p>
 }
