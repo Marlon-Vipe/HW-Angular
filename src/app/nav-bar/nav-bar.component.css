@@ -1,3 +1,32 @@
 h1 {
     color: aliceblue;
 }
+
+nav {
+    background-color: #333; /* Color de fondo del navbar */
+    padding: 10px; /* Espacio dentro del navbar */
+}
+
+ul {
+    list-style-type: none; /* Quitar puntos de la lista */
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Mantener los elementos dentro del navbar */
+    display: flex; /* Mostrar los elementos horizontalmente */
+}
+
+li {
+    float: left; /* Alinear los elementos hacia la izquierda */
+}
+
+li a {
+    display: block;
+    color: white; /* Color del texto */
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none; /* Quitar subrayado */
+}
+
+li a:hover {
+    background-color: #111; /* Color de fondo al pasar el mouse */
+}
