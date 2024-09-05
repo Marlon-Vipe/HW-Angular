@@ -9,9 +9,9 @@ import { Component } from '@angular/core';
 })
 export class UserComponent {
   username = "Marlon Villalona"
-  isLoggedIn = true;
+  isLoggedIn = false; // Esta funcionando como un state
 
-  greet(){
+  greet(){ // Metodo para ejecutarlo y llamarlo en el user html
     alert('Hi!');
   }
 }
