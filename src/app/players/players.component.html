@@ -1,1 +1,6 @@
-<p>players works!</p>
+<ul>
+    @for (player of players; track player.id)
+    {
+        <li>{{player.name}}</li>
+    }
+</ul>

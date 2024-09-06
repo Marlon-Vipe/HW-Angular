@@ -8,5 +8,30 @@ import { Component } from '@angular/core';
   styleUrl: './players.component.css'
 })
 export class PlayersComponent {
-
+  players = [
+    {
+      id: 1,
+      name: 'Aaron Judge'
+    },
+    {
+      id: 2,
+      name: 'Juan Soto'
+    },
+    {
+      id: 3, 
+      name: 'Fernando Tatis Jr.'
+    },
+    {
+      id: 4,
+      name: 'Vladimir Guerrero Jr.'
+    },
+    {
+      id: 5,
+      name: 'Jose Ramirez'
+    },
+    {
+      id: 6,
+      name: 'Ketel Marte'
+    },
+    ]
 }
