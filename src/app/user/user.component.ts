@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-user',
@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './user.component.css'
 })
 export class UserComponent {
-  username = "Marlon Villalona"
+  @Input() username = 'Marlon Villalona'
   isLoggedIn = false; // Esta funcionando como un state
   signOut = false;
 

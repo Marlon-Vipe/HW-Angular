@@ -1,13 +1,16 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { UserComponent } from '../user/user.component';
 
 @Component({
   selector: 'app-teams',
   standalone: true,
-  imports: [],
+  imports: [UserComponent],
   templateUrl: './teams.component.html',
   styleUrl: './teams.component.css'
 })
 export class TeamsComponent {
+  @Input() username = 'Marlon Villalona'
+
   teams = [
   {
     id: 1,
