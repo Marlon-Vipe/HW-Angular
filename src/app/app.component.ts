@@ -14,4 +14,9 @@ import { PlayersComponent } from './players/players.component';
 })
 export class AppComponent { 
   title = 'Vipe Web';
+  favTeam = '';
+
+  getFavoriteTeam(gameName: string){
+    this.favTeam = gameName;
+  }
 }

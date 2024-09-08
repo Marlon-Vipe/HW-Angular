@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { UserComponent } from '../user/user.component';
 
 @Component({
@@ -9,7 +9,12 @@ import { UserComponent } from '../user/user.component';
   styleUrl: './teams.component.css'
 })
 export class TeamsComponent {
-  @Input() username = 'Marlon Villalona'
+  @Input() username = 'Marlon Villalona';
+  @Output() addFavoriteEvent = new EventEmitter<string>();
+
+  favoriteTeam(teamName: string){
+    this.addFavoriteEvent.emit(teamName)
+  }
 
   teams = [
   {

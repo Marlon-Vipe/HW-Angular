@@ -2,6 +2,6 @@
 <ul>
     @for (team of teams; track team.id)
     {
-        <li>{{team.name}}</li>
+        <li (click)="favoriteTeam(team.name)">{{team.name}}</li>
     }
 </ul>
