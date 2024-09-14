@@ -1,6 +1,8 @@
 <app-nav-bar></app-nav-bar>
 <app-user></app-user>
-<app-teams (addFavoriteEvent)="getFavoriteTeam($event)"></app-teams>
+@defer{
+  <app-teams (addFavoriteEvent)="getFavoriteTeam($event)"></app-teams>
+}
 <app-players></app-players>
 @if (favTeam !== ''){
     <p>Tu equipo favorito es: {{favTeam}}</p>
